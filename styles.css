@@ -26,6 +26,7 @@
 .navbar a:hover {
     background-color: rgb(161, 170, 170);
     color: black;
+    transition: all 100ms ease;
 }
 
 .navbar a.active {
