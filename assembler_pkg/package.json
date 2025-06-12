@@ -1,0 +1,14 @@
+{
+  "name": "cool_cpu_assembler",
+  "version": "0.1.0",
+  "files": [
+    "cool_cpu_assembler_bg.wasm",
+    "cool_cpu_assembler.js",
+    "cool_cpu_assembler.d.ts"
+  ],
+  "module": "cool_cpu_assembler.js",
+  "types": "cool_cpu_assembler.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}

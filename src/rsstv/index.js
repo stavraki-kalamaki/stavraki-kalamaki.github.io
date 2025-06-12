@@ -1,4 +1,4 @@
-import * as rsstv from "./rsstv_pkg/rsstv.js";
+import * as rsstv from "../../rsstv_pkg/rsstv.js";
 
 rsstv.default().then(init);
 
