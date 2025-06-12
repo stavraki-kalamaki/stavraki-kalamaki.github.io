@@ -1,0 +1,23 @@
+{
+  "name": "rsstv",
+  "collaborators": [
+    "Emmanuel Koutsouklakis <emmtbm55@gmail.com>"
+  ],
+  "description": "A SSTV transcoder written in Rust. Currently supporting just the Martin M1 mode",
+  "version": "0.2.2",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emm312/rsstv"
+  },
+  "files": [
+    "rsstv_bg.wasm",
+    "rsstv.js",
+    "rsstv.d.ts"
+  ],
+  "module": "rsstv.js",
+  "types": "rsstv.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
