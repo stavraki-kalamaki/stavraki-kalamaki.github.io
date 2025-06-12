@@ -16,7 +16,7 @@ function update() {
 
         document.getElementById("assembled_bytes").textContent = to_base_arr(assembled, 16, " ", 2);
 
-        document.getElementById("assembled_bin").textContent = to_base_arr(assembled, 2, " ", 8);
+        document.getElementById("assembled_bin").textContent = to_base_arr(assembled, 2, "\n", 8);
 
         document.getElementById("assembled_decimal").textContent = to_base_arr(assembled, 10, " ", 0);
         document.getElementById("errors").textContent = "";
