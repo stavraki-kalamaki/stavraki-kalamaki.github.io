@@ -5,7 +5,7 @@
 <head>
     <title>CV</title>
     <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="loading.css">
+    <link rel="stylesheet" href="../loading.css">
     <link rel="stylesheet" href="rsstv.css">
     <script src="bootstrap_rsstv.js"></script>
 </head>
@@ -17,18 +17,18 @@
     </div>
     <div class="navbar">
         <a href="../../index.html">Home</a>
-        <span>Projects</span>
+        <span><b><i>Projects</i></b></span>
         <a class="active" href="./rsstv.html">RSSTV</a>
         <a href="../assembler/assembler.html">CPU Assembler</a>
     </div>
 
-    <div tag="align_next_to_eachother">
-        <div tag="encoding_side">
-            <input type="file">
+        <div class="split left body_elem">
+            <input type="file" accept="image/png image/jpg image/jpeg" id="image_in">
+            <button id="encode_button">Encode</button>
 
         </div>
 
-        <div tag="decoding_side">
+        <div class="split right body_elem" tag="decoding">
             <p>test</p>
         </div>
     </div>

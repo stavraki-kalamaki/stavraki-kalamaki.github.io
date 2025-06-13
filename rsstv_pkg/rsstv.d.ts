@@ -10,7 +10,7 @@ export class SSTVDecoderWASM {
   free(): void;
   static new(): SSTVDecoderWASM;
   decode(buf: Float32Array): Uint8Array | undefined;
-  encode(image: Uint8Array): Float32Array;
+  encode(image: Uint8Array, width: number, height: number): Float32Array;
 }
 
 export type InitInput = RequestInfo | URL | Response | BufferSource | WebAssembly.Module;
@@ -20,7 +20,7 @@ export interface InitOutput {
   readonly __wbg_sstvdecoderwasm_free: (a: number, b: number) => void;
   readonly sstvdecoderwasm_new: () => number;
   readonly sstvdecoderwasm_decode: (a: number, b: number, c: number) => [number, number];
-  readonly sstvdecoderwasm_encode: (a: number, b: number, c: number) => [number, number];
+  readonly sstvdecoderwasm_encode: (a: number, b: number, c: number, d: number, e: number) => [number, number];
   readonly __wbindgen_export_0: WebAssembly.Table;
   readonly __wbindgen_malloc: (a: number, b: number) => number;
   readonly __wbindgen_free: (a: number, b: number, c: number) => void;

@@ -1,14 +1,25 @@
-#align_next_to_eachother {
-    flex: auto;
-    float: left;
-    align-items: center;
-    gap: 2rem;
+.split {
+    height: 80%;
+    width: 46%;
+    z-index: 1;
+    position: absolute;
+    top: 5rem;
+    overflow-x: hidden;
+    padding-top: 20px;
 }
 
-#align_next_to_eachother div {
-    background-color: black;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex: auto;
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+#encode_button {
+    background-color: greenyellow;
+    color: black;
+    border-radius: 1rem;
+    border-color: greenyellow;
+    font-size: 1rem;
 }

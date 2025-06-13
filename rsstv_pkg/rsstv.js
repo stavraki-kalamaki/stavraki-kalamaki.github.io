@@ -106,12 +106,14 @@ export class SSTVDecoderWASM {
     }
     /**
      * @param {Uint8Array} image
+     * @param {number} width
+     * @param {number} height
      * @returns {Float32Array}
      */
-    encode(image) {
+    encode(image, width, height) {
         const ptr0 = passArray8ToWasm0(image, wasm.__wbindgen_malloc);
         const len0 = WASM_VECTOR_LEN;
-        const ret = wasm.sstvdecoderwasm_encode(this.__wbg_ptr, ptr0, len0);
+        const ret = wasm.sstvdecoderwasm_encode(this.__wbg_ptr, ptr0, len0, width, height);
         var v2 = getArrayF32FromWasm0(ret[0], ret[1]).slice();
         wasm.__wbindgen_free(ret[0], ret[1] * 4, 4);
         return v2;

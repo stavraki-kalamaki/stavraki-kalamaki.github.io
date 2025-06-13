@@ -6,6 +6,13 @@
     background-color: rgb(28, 28, 28);
     font-family: monospace;
     color: rgb(238, 238, 238);
+
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 .navbar {
@@ -47,7 +54,7 @@
     justify-content: center;
 }
 
-.page .body_elem {
+.body_elem {
     justify-self: center;
     background-color: rgb(43, 43, 43);
     border-radius: 1rem;
@@ -56,7 +63,7 @@
     width: 75%;
 }
 
-.page .sub_body_elem {
+.sub_body_elem {
     background-color: rgb(37, 37, 37);
     border-radius: 1rem;
     padding: 0.5rem;
