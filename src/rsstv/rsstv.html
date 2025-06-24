@@ -21,11 +21,14 @@
         <a class="active" href="./rsstv.html">RSSTV</a>
         <a href="../assembler/assembler.html">CPU Assembler</a>
     </div>
-
         <div class="split left body_elem">
-            <input type="file" accept="image/png image/jpg image/jpeg" id="image_in">
+            <input type="file" accept="image/*" id="image_in">
             <button id="encode_button">Encode</button>
 
+            <div class="sub_body_elem">
+                <img width="320" height="256" id="img_preview">
+            </div>
+            <audio id="encode_out" type="audio/wav" src="" controls></audio>
         </div>
 
         <div class="split right body_elem" tag="decoding">
