@@ -40,6 +40,12 @@
     color: black;
 }
 
+.navbar a.sub {
+    font-size: 1rem;
+    padding: 1rem;
+    margin-top: 0.6rem;
+}
+
 .navbar span {
     font-size: 1.2rem;
     float: left;
